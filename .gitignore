@@ -1,1 +1,4 @@
 **/__pycache__
+**/blockchain-env
+**/.pytest_cache
+**/.vscode

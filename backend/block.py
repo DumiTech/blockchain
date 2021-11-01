@@ -1,6 +1,13 @@
 import time
 from crypto_hash import crypto_hash
 
+GENESIS_DATA = {
+    "timestamp": 1,
+    "last_hash": "genesis_last_hash",
+    "hash": "genesis_hash",
+    "data": [],
+}
+
 
 class Block:
     """
@@ -16,11 +23,11 @@ class Block:
 
     def __repr__(self):
         return (
-            '\nBlock('
-            f'timestamp: {self.timestamp}, '
-            f'last_hash: {self.last_hash}, '
-            f'hash: {self.hash}, '
-            f'data: {self.data})'
+            "\nBlock("
+            f"timestamp: {self.timestamp}, "
+            f"last_hash: {self.last_hash}, "
+            f"hash: {self.hash}, "
+            f"data: {self.data})"
         )
 
     @staticmethod
@@ -39,14 +46,20 @@ class Block:
         """
         Generate the genesis block.
         """
-        return Block(1, 'genesis_last_hash', 'genesis_hash', [])
+        return Block(
+            GENESIS_DATA["timestamp"],
+            GENESIS_DATA["last_hash"],
+            GENESIS_DATA["hash"],
+            GENESIS_DATA["data"],
+        )
 
 
 # experimentation code:
 def main():
     genesis_block = Block.genesis()
-    block = Block.mine_block(genesis_block, 'first')
+    block = Block.mine_block(genesis_block, "first")
     print(block)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

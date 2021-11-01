@@ -1,9 +1,21 @@
-=====================================================================================================================
+=========================================================================
 
 This project was created to better understand this interesting area of blockchain and cryptocurrencies.
 What could be a better way of understanding things if not by building them and think creatively?
 
-=====================================================================================================================
+=========================================================================
+
+**Install all packages**
+
+```
+pip install -r requierments.txt
+```
+
+**Run the tests**
+
+```
+pytest  # you need to run this command from the backend directory
+```
 
 Blockchain
 The blockchain is a distributed and decentralized ledger that stores data such as transcations, and that is publicly shared across all the nodes of its network.
