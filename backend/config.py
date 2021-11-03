@@ -1,0 +1,8 @@
+#this file is for collecting global values for the project
+
+NANOSECONDS = 1
+MICROSECONDS = 1000 * NANOSECONDS
+MILLISECONDS = 1000 * MICROSECONDS
+SECONDS = 1000 * MILLISECONDS
+
+MINE_RATE = 5 * SECONDS

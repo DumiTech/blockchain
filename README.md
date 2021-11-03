@@ -14,7 +14,13 @@ pip install -r requierments.txt
 **Run the tests**
 
 ```
-pytest  # you need to run this command from the backend directory
+py -m pytest  #run this command from the backend directory level
+```
+
+**Run scripts**
+
+```
+py -m scripts.avg_block_rate    #run this command from the backend directory level
 ```
 
 Blockchain
