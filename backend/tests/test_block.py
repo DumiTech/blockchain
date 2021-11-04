@@ -20,6 +20,7 @@ def test_mine_block():
     assert block.hash[0:block.difficulty] == '0' * block.difficulty
 
 
+
 def test_genesis():
     genesis = Block.genesis()
 
