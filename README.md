@@ -13,6 +13,8 @@ pip install -r requierments.txt
 
 **Run the tests**
 
+Make sure to activate the virtual environment
+
 ```
 py -m pytest  #run this command from the backend directory level
 ```
@@ -21,6 +23,12 @@ py -m pytest  #run this command from the backend directory level
 
 ```
 py -m scripts.avg_block_rate    #run this command from the backend directory level
+```
+
+**Run the application and the API**
+
+```
+py -m app
 ```
 
 Blockchain

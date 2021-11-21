@@ -41,6 +41,12 @@ class Block:
     def __eq__(self, other):
         return self.__dict__ == other.__dict__
 
+    def to_json(self):
+        """
+        Serialize the block into a dictionary of its attributes.
+        """
+        return self.__dict__
+
     @staticmethod
     def mine_block(last_block, data):
         """
@@ -89,7 +95,7 @@ class Block:
         return 1
 
     @staticmethod
-    def is_valid_block(last_block, block):  
+    def is_valid_block(last_block, block):
         '''
         Validate the block by enforcing the following rules:
             - the block must have the proper last_hash reference
